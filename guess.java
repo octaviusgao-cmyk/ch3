@@ -12,7 +12,7 @@ public class guess {
 		System.out.println("(including both). Can you guess what it is?");
 		System.out.println("Type a number: " );
 		int pick = in.nextInt();
-		int difference = Math.abs(number-pick);13
+		int difference = Math.abs(number-pick);
 		
 		System.out.println("Your guess is: " + pick);
 		System.out.println("The number I was thinking of is: " + number);
