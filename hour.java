@@ -6,9 +6,12 @@ public class hour {
 		Scanner in = new Scanner(System.in);
 		System.out.print("Type an amount of seconds: ");
 		int line = in.nextInt();
-		int seconds = (line/60) % 60; 
-		int minutes = (seconds/60) % 60;
-		System.out.println(seconds+minutes);
+		int minutes = line/60;
+		int minutesremaining = line % 60;
+		int hours = minutesremaining/360;
+		int hoursremaining = minutesremaining % 360;
+		System.out.println("This is the amount of seconds: " + line);
+		System.out.println(hours + " hours" + minutes + " minutes" +minutesremaining+hoursremaining + " seconds");
 		
 	}
 	}
